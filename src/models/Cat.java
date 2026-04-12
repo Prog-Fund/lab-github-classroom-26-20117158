@@ -25,4 +25,13 @@ public class Cat extends Mammal{
     public void setIndoorCat(boolean indoorCat) {
         this.indoorCat = indoorCat;
     }
+    public double calculateWeeklyFee() {
+        double baseRate = 20;
+        if (indoorCat) {
+            baseRate = baseRate + 5;
+        }
+        return baseRate * numOfDaysInKennel();
+
+    }
+    }
 }

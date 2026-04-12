@@ -1,10 +1,10 @@
 package models;
 
-public class Bird extends Pet{
-    private double wingSpan;
-    private double canFly;
+abstract public class Bird extends Pet{
+    private double wingSpan = 3;
+    private boolean canFly = false;
 
-    public Bird(String name, int age, Owner owner, int id, double wingSpan, double canFly) {
+    public Bird(String name, int age, Owner owner, int id, double wingSpan, boolean canFly) {
         super(name, age, owner, id);
         this.wingSpan = wingSpan;
         this.canFly = canFly;
@@ -18,11 +18,11 @@ public class Bird extends Pet{
         this.wingSpan = wingSpan;
     }
 
-    public double getCanFly() {
+    public boolean getCanFly() {
         return canFly;
     }
 
-    public void setCanFly(double canFly) {
+    public void setCanFly(boolean canFly) {
         this.canFly = canFly;
     }
 }

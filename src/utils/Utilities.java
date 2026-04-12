@@ -16,7 +16,7 @@ public class Utilities {
             return stringToTruncate;
         }
         else{
-            return stringToTruncate.substring(0, length):
+            return stringToTruncate.substring(0, length);
 
 
 

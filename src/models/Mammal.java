@@ -1,6 +1,6 @@
 package models;
 
-public class Mammal extends Pet{
+abstract public class Mammal extends Pet{
     private char sex;
     private boolean neutered;
     private double weight;
